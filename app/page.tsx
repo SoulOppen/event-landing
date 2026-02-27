@@ -7,8 +7,7 @@ export default function Home() {
   return (
     <main>
       <About />
-      <div className="aspect-ratio">
-      <div className="relative w-full  h-64">
+      <div className="relative w-full h-64">
         <Image
           src={party}
           alt="Banner party del evento"
@@ -16,7 +15,6 @@ export default function Home() {
           priority
           className="object-cover"
         />
-      </div>
       </div>
       <Features />
       <CTA />
