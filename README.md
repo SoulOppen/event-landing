@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Event Landing — Neon Nights Live
 
-## Getting Started
+Pequeña página de aterrizaje para un evento musical llamada **Neon Nights Live**. Está construida con Next.js (App Router) y TypeScript, y sirve como plantilla para promocionar conciertos, eventos y vender entradas.
 
-First, run the development server:
+## Qué incluye
+
+- Secciones: `About`, `Features` (highlights), banner, `CTA` (tickets), `Nav` y `Footer`.
+- Componentes principales: `app/page.tsx`, `app/layout.tsx`, `app/sections/*`.
+- Assets: imágenes en `public/` (por ejemplo `banner.webp`, `party.webp`).
+
+## Tecnologías
+
+- Next.js (App Router) con TypeScript
+- Tailwind CSS para estilos utilitarios
+- `next/image` para optimización de imágenes
+
+## Ejecutar en desarrollo
+
+Instala dependencias y levanta el servidor de desarrollo (usa `pnpm`, `npm` o `yarn` según prefieras):
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+pnpm install
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Alternativas:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm install
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Luego abre http://localhost:3000 en tu navegador.
 
-## Learn More
+## Estructura rápida
 
-To learn more about Next.js, take a look at the following resources:
+- `app/layout.tsx` — Layout global, incluye banner, `Nav` y `Footer`.
+- `app/page.tsx` — Página principal que monta `About`, banner, `Features` y `CTA`.
+- `app/sections/` — Componentes de secciones reutilizables.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Personalización y notas
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Actualiza textos como fecha, descripción y artistas en `app/sections/*` para reflejar tu evento.
+- El botón del CTA es actualmente estático; integra el flujo de compra (enlace a checkout o proveedor de tickets) según tu plataforma.
+- Los estilos usan utilidades Tailwind y una clase `bg-accent`; ajusta la configuración de Tailwind si cambias colores.
 
-## Deploy on Vercel
+## Despliegue
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Se despliega fácilmente en Vercel (recomendado), Netlify u otros hosts compatibles con Next.js. Conecta el repositorio y Vercel detectará el framework automáticamente.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Contribuir
+
+Si quieres mejorar la plantilla, haz un fork, crea una rama con tus cambios y abre un pull request.
+
+---
+
+¿Quieres que actualice este README con instrucciones de despliegue específicas para Vercel o con un ejemplo de integración de pago para el CTA?
