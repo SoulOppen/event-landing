@@ -9,7 +9,7 @@ export default function Nav(){
                 <Link href="#">Description</Link>
                 </li>
                 <li>
-                <Link href="#">Comprar</Link>
+                <Link href=>Comprar</Link>
                 </li>
             </ul>
         </nav>
