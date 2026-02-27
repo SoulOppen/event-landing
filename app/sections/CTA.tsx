@@ -7,7 +7,7 @@ export default function CTA() {
       <p className="mb-6">
         Secure your spot now and get your digital ticket instantly.
       </p>
-      <button className="bg-accent px-6 py-3 rounded-full font-medium hover:opacity-90">
+      <button className="bg-accent px-6 py-3 rounded-full font-medium hover:opacity-90 cursor-pointer">
         Buy tickets
       </button>
     </section>
